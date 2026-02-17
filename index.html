@@ -1,3 +1,5 @@
+Here is the HTML code with the `+` signs removed from the diff view, leaving the final website code ready to use.
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -391,7 +393,9 @@
         .contact-detail-label{font-family:var(--font-mono);font-size:0.72rem;text-transform:uppercase;letter-spacing:2px;color:var(--text-subtle);margin-bottom:var(--spacing-xs);font-weight:700}
         .contact-detail-value{font-weight:600;color:var(--text-heading);font-size:1.05rem}
         .contact-map{margin-top:var(--spacing-2xl);border-radius:var(--radius-lg);overflow:hidden;height:280px;background:var(--bg-secondary);position:relative;box-shadow:var(--shadow-deep)}
-        .contact-map img{width:100%;height:100%;object-fit:cover;filter:brightness(0.9) contrast(1.1)}
+        .contact-map iframe{width:100%;height:100%;border:0;display:block}
+        .contact-map-link{position:absolute;bottom:var(--spacing-md);right:var(--spacing-md);display:inline-flex;align-items:center;gap:var(--spacing-sm);padding:0.45rem 0.8rem;border-radius:var(--radius-full);background:rgba(11,15,26,0.85);color:#fff;font-size:0.75rem;font-family:var(--font-mono);letter-spacing:0.5px;z-index:1}
+        .contact-map-link:hover{background:var(--ember-500);color:#fff}
         .contact-form{background:var(--bg-card);padding:var(--spacing-2xl);border-radius:var(--radius-lg);border:1px solid var(--border-card);box-shadow:var(--shadow-deep)}
         .form-group{margin-bottom:var(--spacing-xl)}
         .form-group label{display:block;font-weight:600;font-size:0.9rem;margin-bottom:var(--spacing-sm);color:var(--text-heading)}
@@ -984,7 +988,16 @@
                     </div>
                 </div>
                 <div class="contact-map">
-                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80" alt="Addis Ababa aerial view - Our Location">
+                    <iframe
+                        title="YG Trade & Construction PLC location map"
+                        src="https://www.google.com/maps?q=Bole+Road,+Addis+Ababa,+Ethiopia&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
+                    <a class="contact-map-link" href="https://maps.google.com/?q=Bole+Road,+Addis+Ababa,+Ethiopia" target="_blank" rel="noopener noreferrer">
+                        Open in Google Maps <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
             <div class="contact-form reveal-right">
@@ -1377,4 +1390,4 @@
 </script>
 </body>
 </html>
-
+```
