@@ -3,44 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="YG Trade and Construction PLC - Leading import/export of construction materials, technology devices, and commercial building construction.">
-    <meta name="keywords" content="construction, ceramic tiles, import export, technology devices, commercial buildings, YG Trade">
+    <meta name="description" content="YG Trade and Construction PLC - Ethiopia's trusted one-stop supplier of quality construction materials including cement, rebar, HCB, aggregates, finishing, plumbing, electrical, roofing, and paint.">
+    <meta name="keywords" content="construction materials, cement, rebar, HCB, aggregates, finishing materials, plumbing, electrical, roofing, paint, Ethiopia, one-stop supplier, YG Trade">
     <title>YG Trade & Construction PLC</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        /* ============ DESIGN TOKENS ============ */
         :root {
-            /* Surfaces */
             --bg-primary: #fafbff;
             --bg-secondary: #f0f2f9;
             --bg-card: #ffffff;
             --bg-card-hover: #ffffff;
             --bg-input: #ffffff;
-
-            /* Text */
             --text-heading: #0e1630;
             --text-body: #3b4563;
             --text-muted: #6b7896;
             --text-subtle: #94a0bf;
-
-            /* Borders */
             --border-light: #e2e6f2;
             --border-card: #e8ecf5;
-
-            /* Fixed dark palette (never changes in dark mode) */
-            --fixed-dark-bg: #0b0f1a;
-            --fixed-dark-bg2: #0f1629;
-            --fixed-dark-bg3: #151d35;
-            --fixed-dark-surface: rgba(255,255,255,0.04);
-            --fixed-dark-surface-hover: rgba(255,255,255,0.09);
-            --fixed-dark-border: rgba(255,255,255,0.08);
-            --fixed-dark-border-hover: rgba(232,121,43,0.35);
-            --fixed-dark-text: #ffffff;
-            --fixed-dark-text-sub: rgba(255,255,255,0.65);
-            --fixed-dark-text-muted: rgba(255,255,255,0.45);
-
-            /* Brand */
             --ember-700: #9a3a00;
             --ember-600: #c45e1a;
             --ember-500: #e8792b;
@@ -53,13 +33,9 @@
             --neon-amber: #ffab40;
             --success: #00e676;
             --error: #ff5252;
-
-            /* Fonts */
             --font-heading: 'Playfair Display', Georgia, serif;
             --font-body: 'Syne', system-ui, sans-serif;
             --font-mono: 'Space Mono', monospace;
-
-            /* Spacing */
             --spacing-xs: 0.25rem;
             --spacing-sm: 0.5rem;
             --spacing-md: 1rem;
@@ -67,34 +43,25 @@
             --spacing-xl: 2rem;
             --spacing-2xl: 3rem;
             --spacing-3xl: 4rem;
-
-            /* Shadows */
             --shadow-glow: 0 0 40px rgba(232,121,43,0.15);
             --shadow-deep: 0 25px 60px rgba(0,0,0,0.12);
             --shadow-card: 0 4px 24px rgba(14,22,48,0.06);
             --shadow-card-hover: 0 20px 50px rgba(14,22,48,0.12);
             --shadow-btn: 0 6px 24px rgba(232,121,43,0.35);
-
-            /* Radii */
             --radius-sm: 8px;
             --radius-md: 16px;
             --radius-lg: 24px;
             --radius-xl: 32px;
             --radius-full: 9999px;
-
-            /* Transitions */
             --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
             --transition-slow: 0.5s cubic-bezier(0.4,0,0.2,1);
             --transition-spring: 0.6s cubic-bezier(0.34,1.56,0.64,1);
-
-            /* Layout */
             --nav-height: 80px;
             --container-max: 1280px;
             --section-padding: clamp(6rem,12vw,10rem);
             --grain-opacity: 0.025;
         }
 
-        /* ============ DARK MODE ============ */
         .dark {
             --bg-primary: #0b0f1a;
             --bg-secondary: #111827;
@@ -112,14 +79,10 @@
             --shadow-deep: 0 25px 60px rgba(0,0,0,0.4);
         }
 
-        /* ============ RESET ============ */
         *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
         html{scroll-behavior:smooth;font-size:16px;overflow-x:hidden}
         body{font-family:var(--font-body);color:var(--text-body);background:var(--bg-primary);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
-
-        /* Grain overlay */
         body::after{content:'';position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:var(--grain-opacity);background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-repeat:repeat;background-size:256px 256px}
-
         .container{max-width:var(--container-max);margin:0 auto;padding:0 var(--spacing-xl);width:100%}
         h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);line-height:1.15;font-weight:700;margin-bottom:var(--spacing-md);color:var(--text-heading)}
         h1{font-size:clamp(2.8rem,6vw,5rem)}
@@ -141,8 +104,6 @@
 
         /* ============ ANIMATIONS ============ */
         @keyframes fadeSlideUp{from{opacity:0;transform:translateY(60px)}to{opacity:1;transform:translateY(0)}}
-        @keyframes fadeSlideDown{from{opacity:0;transform:translateY(-40px)}to{opacity:1;transform:translateY(0)}}
-        @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
         @keyframes floatSlow{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(2deg)}}
         @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.7;transform:scale(1.05)}}
         @keyframes gradientShift{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(-3%,3%) scale(1.08)}66%{transform:translate(3%,-3%) scale(0.95)}}
@@ -154,11 +115,8 @@
         @keyframes loadingFill{0%{width:0}100%{width:100%}}
         @keyframes textShimmer{0%{background-position:0% 50%}100%{background-position:200% 50%}}
         @keyframes orbitSlow{0%{transform:rotate(0deg) translateX(200px) rotate(0deg)}100%{transform:rotate(360deg) translateX(200px) rotate(-360deg)}}
-        @keyframes rippleOut{0%{transform:scale(0);opacity:0.6}100%{transform:scale(4);opacity:0}}
-        @keyframes slideIn{from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:translateX(0)}}
-        @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+        @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-        /* Scroll-triggered */
         .reveal{opacity:0;transform:translateY(50px);transition:opacity 0.9s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.9s cubic-bezier(0.25,0.46,0.45,0.94)}
         .reveal.visible{opacity:1;transform:translateY(0)}
         .reveal-left{opacity:0;transform:translateX(-70px);transition:opacity 0.9s ease,transform 0.9s ease}
@@ -167,7 +125,7 @@
         .reveal-right.visible{opacity:1;transform:translateX(0)}
         .reveal-scale{opacity:0;transform:scale(0.85);transition:opacity 0.9s ease,transform 0.9s ease}
         .reveal-scale.visible{opacity:1;transform:scale(1)}
-        .stagger-children .reveal{transition-delay:calc(var(--i,0) * 0.15s)}
+        .stagger-children .reveal{transition-delay:calc(var(--i,0) * 0.12s)}
 
         /* ============ BUTTONS ============ */
         .btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--spacing-sm);padding:0.95rem 2.2rem;border-radius:var(--radius-full);font-family:var(--font-body);font-size:0.95rem;font-weight:600;cursor:pointer;border:2px solid transparent;transition:all var(--transition);position:relative;overflow:hidden;white-space:nowrap;text-align:center;user-select:none;letter-spacing:0.5px}
@@ -211,9 +169,7 @@
         .hero-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(0.18) saturate(1.3) contrast(1.1)}
         .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(165deg,rgba(11,15,26,0.95) 0%,rgba(15,22,41,0.85) 40%,rgba(11,15,26,0.92) 100%)}
         .hero::before{content:'';position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at 15% 85%,rgba(79,195,247,0.08) 0%,transparent 50%),radial-gradient(ellipse at 85% 15%,rgba(232,121,43,0.1) 0%,transparent 50%),radial-gradient(ellipse at 50% 50%,rgba(79,195,247,0.04) 0%,transparent 60%);animation:gradientShift 20s ease-in-out infinite}
-
         .hero-grid-overlay{position:absolute;inset:0;z-index:1;opacity:0.04;background-image:linear-gradient(rgba(255,255,255,0.5) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.5) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
-
         .hero-particles{position:absolute;inset:0;z-index:1;overflow:hidden;pointer-events:none}
         .particle{position:absolute;border-radius:50%;animation:particleDrift linear infinite}
         .particle:nth-child(1){left:8%;animation-duration:14s;animation-delay:0s;width:3px;height:3px;background:rgba(255,255,255,0.25)}
@@ -224,18 +180,15 @@
         .particle:nth-child(6){left:82%;animation-duration:17s;animation-delay:4s;width:4px;height:4px;background:rgba(232,121,43,0.2)}
         .particle:nth-child(7){left:12%;animation-duration:22s;animation-delay:2.5s;width:2px;height:2px;background:rgba(255,255,255,0.15)}
         .particle:nth-child(8){left:58%;animation-duration:19s;animation-delay:1.5s;width:4px;height:4px;background:rgba(255,255,255,0.1)}
-
         .hero-blob{position:absolute;width:600px;height:600px;right:-150px;bottom:-150px;background:linear-gradient(135deg,rgba(232,121,43,0.12),rgba(79,195,247,0.08));border-radius:60% 40% 30% 70%/60% 30% 70% 40%;animation:morphBlob 15s ease-in-out infinite;z-index:1;filter:blur(60px)}
         .hero-blob-2{position:absolute;width:400px;height:400px;left:-100px;top:20%;background:linear-gradient(135deg,rgba(79,195,247,0.08),rgba(232,121,43,0.06));border-radius:40% 60% 70% 30%/60% 30% 70% 40%;animation:morphBlob 18s ease-in-out infinite reverse;z-index:1;filter:blur(50px)}
-
         .orbit-ring{position:absolute;width:500px;height:500px;right:-50px;top:10%;border:1px solid rgba(255,255,255,0.03);border-radius:50%;z-index:1;pointer-events:none}
         .orbit-dot{position:absolute;width:8px;height:8px;background:var(--ember-400);border-radius:50%;top:50%;left:0;transform:translate(-50%,-50%);animation:orbitSlow 25s linear infinite;box-shadow:0 0 20px rgba(232,121,43,0.5)}
-
         .hero-content{position:relative;z-index:2;max-width:820px;padding:130px 0 80px}
         .hero-badge{display:inline-flex;align-items:center;gap:var(--spacing-sm);background:rgba(232,121,43,0.12);border:1px solid rgba(232,121,43,0.3);color:var(--ember-300);padding:var(--spacing-sm) var(--spacing-lg);border-radius:var(--radius-full);font-family:var(--font-mono);font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:3px;margin-bottom:var(--spacing-xl);animation:fadeSlideUp 0.8s 0.2s both;backdrop-filter:blur(12px)}
         .hero-badge i{animation:pulse 2s ease-in-out infinite}
         .hero h1{font-size:clamp(3rem,6.5vw,5rem);color:#fff;font-weight:800;margin-bottom:var(--spacing-xl);line-height:1.05;animation:fadeSlideUp 0.8s 0.4s both;letter-spacing:-1px}
-        .hero h1 .accent{background:linear-gradient(135deg,var(--ember-300),var(--ember-500),var(--neon-amber));background-size:200% 200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:textShimmer 4s ease-in-out infinite;position:relative}
+        .hero h1 .accent{background:linear-gradient(135deg,var(--ember-300),var(--ember-500),var(--neon-amber));background-size:200% 200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:textShimmer 4s ease-in-out infinite}
         .hero-desc{font-size:1.15rem;color:rgba(255,255,255,0.65);margin-bottom:var(--spacing-2xl);line-height:1.85;max-width:620px;animation:fadeSlideUp 0.8s 0.6s both;font-weight:400}
         .hero-buttons{display:flex;flex-wrap:wrap;gap:var(--spacing-md);animation:fadeSlideUp 0.8s 0.8s both}
         .hero-stats{display:flex;flex-wrap:wrap;gap:clamp(2rem,5vw,4rem);margin-top:var(--spacing-3xl);animation:fadeSlideUp 0.8s 1s both;padding-top:var(--spacing-2xl);border-top:1px solid rgba(255,255,255,0.08)}
@@ -246,7 +199,6 @@
         .hero-stat-bar{width:50px;height:2px;margin:10px auto 0;background:rgba(255,255,255,0.08);border-radius:var(--radius-full);overflow:hidden}
         .hero-stat-bar-fill{height:100%;background:linear-gradient(90deg,var(--ember-500),var(--ember-300));border-radius:var(--radius-full);width:0;transition:width 1.8s cubic-bezier(0.22,1,0.36,1)}
         .hero-stat-bar-fill.animate{width:100%}
-
         .scroll-indicator{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:var(--spacing-sm);color:rgba(255,255,255,0.35);font-family:var(--font-mono);font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;animation:scrollBounce 2.5s ease-in-out infinite}
         .scroll-indicator-line{width:1px;height:50px;background:linear-gradient(to bottom,var(--ember-400),transparent);border-radius:var(--radius-full)}
 
@@ -260,22 +212,39 @@
         .about-img-main img{width:100%;height:100%;object-fit:cover;transition:transform 0.8s ease}
         .about-img-main:hover img{transform:scale(1.05)}
         .about-img-main::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,15,26,0.1),transparent);pointer-events:none}
-
         .about-img-float{position:absolute;top:-25px;right:-35px;width:190px;height:135px;border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-deep);border:4px solid var(--bg-card);animation:floatSlow 7s ease-in-out infinite;z-index:3}
         .about-img-float img{width:100%;height:100%;object-fit:cover}
-
         .about-experience{position:absolute;bottom:-35px;right:-35px;background:linear-gradient(135deg,var(--ember-500),var(--ember-600));color:#fff;padding:var(--spacing-xl) var(--spacing-2xl);border-radius:var(--radius-lg);box-shadow:var(--shadow-deep);text-align:center;z-index:2;transform:rotate(3deg);transition:transform var(--transition-spring);animation:glowPulse 4s ease-in-out infinite}
         .about-experience:hover{transform:rotate(0deg) scale(1.08)}
         .about-experience-num{font-family:var(--font-mono);font-size:3.5rem;font-weight:700;line-height:1;color:#fff}
         .about-experience-text{font-family:var(--font-mono);font-size:0.75rem;text-transform:uppercase;letter-spacing:2px;opacity:0.9;margin-top:var(--spacing-xs)}
         .about-text h3{font-size:1.8rem;color:var(--text-heading);margin:var(--spacing-lg) 0 var(--spacing-md)}
         .about-text p{color:var(--text-muted);margin-bottom:var(--spacing-md);font-size:1.05rem;line-height:1.85}
-        .about-values{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--spacing-md);margin-top:var(--spacing-xl)}
+
+        /* Vision / Mission / Motto */
+        .vision-mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-lg);margin-top:var(--spacing-xl)}
+        .vm-card{padding:var(--spacing-xl);background:var(--bg-card);border-radius:var(--radius-md);border:1px solid var(--border-card);box-shadow:var(--shadow-card);transition:all var(--transition)}
+        .vm-card.vision{border-top:3px solid var(--ember-500)}
+        .vm-card.mission{border-top:3px solid #2a3a5c}
+        .dark .vm-card.mission{border-top-color:var(--neon-blue)}
+        .vm-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-card-hover)}
+        .vm-label{display:flex;align-items:center;gap:8px;margin-bottom:10px;font-family:var(--font-mono);font-size:0.72rem;text-transform:uppercase;letter-spacing:2px;font-weight:700}
+        .vm-label.v{color:var(--ember-500)}
+        .vm-label.m{color:#2a3a5c}
+        .dark .vm-label.m{color:var(--neon-blue)}
+        .vm-card p{font-size:0.92rem;line-height:1.75;margin:0;color:var(--text-muted)}
+        .motto-strip{margin-top:var(--spacing-xl);padding:var(--spacing-lg) var(--spacing-2xl);background:linear-gradient(135deg,rgba(232,121,43,0.06),rgba(232,121,43,0.12));border-radius:var(--radius-md);border:1px solid rgba(232,121,43,0.2);text-align:center;position:relative;overflow:hidden}
+        .motto-strip::before{content:'\275D';position:absolute;top:-10px;left:16px;font-size:5rem;color:rgba(232,121,43,0.08);font-family:Georgia,serif;line-height:1;pointer-events:none}
+        .motto-strip blockquote{font-family:var(--font-heading);font-size:1.3rem;font-weight:700;color:var(--ember-500);margin:0;font-style:italic;position:relative;z-index:1}
+        .motto-strip cite{display:block;margin-top:6px;font-family:var(--font-mono);font-size:0.7rem;text-transform:uppercase;letter-spacing:3px;color:var(--text-subtle);font-style:normal}
+
+        /* Core values row */
+        .about-values{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--spacing-md);margin-top:var(--spacing-xl)}
         .about-value{display:flex;align-items:center;gap:var(--spacing-md);padding:var(--spacing-lg);background:var(--bg-card);border-radius:var(--radius-md);box-shadow:var(--shadow-card);transition:all var(--transition);border:1px solid var(--border-card)}
         .about-value:hover{transform:translateY(-5px);box-shadow:var(--shadow-card-hover);border-color:var(--ember-200)}
-        .about-value i{color:var(--ember-500);font-size:1.2rem;width:50px;height:50px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(232,121,43,0.08),rgba(232,121,43,0.15));border-radius:var(--radius-md);transition:all var(--transition-spring);flex-shrink:0}
+        .about-value i{color:var(--ember-500);font-size:1.1rem;width:46px;height:46px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(232,121,43,0.08),rgba(232,121,43,0.15));border-radius:var(--radius-md);transition:all var(--transition-spring);flex-shrink:0}
         .about-value:hover i{background:linear-gradient(135deg,var(--ember-500),var(--ember-600));color:#fff;transform:rotate(10deg) scale(1.1)}
-        .about-value span{font-weight:600;font-size:0.95rem;color:var(--text-heading)}
+        .about-value span{font-weight:600;font-size:0.9rem;color:var(--text-heading)}
 
         /* ============ SERVICES ============ */
         .services{padding:var(--section-padding) 0;background:var(--bg-secondary);position:relative}
@@ -285,20 +254,18 @@
         .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#1e2a4a,var(--ember-500),var(--ember-300));transform:scaleX(0);transform-origin:left;transition:transform var(--transition-slow)}
         .service-card:hover::before{transform:scaleX(1)}
         .service-card:hover{transform:translateY(-10px);box-shadow:var(--shadow-card-hover);border-color:transparent}
-
         .service-card-img{width:100%;height:200px;border-radius:var(--radius-md);overflow:hidden;margin-bottom:var(--spacing-xl);position:relative}
         .service-card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,15,26,0.08),transparent);pointer-events:none}
         .service-card-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.7s ease}
         .service-card:hover .service-card-img img{transform:scale(1.12)}
-
-        .service-icon{width:72px;height:72px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin-bottom:var(--spacing-xl);transition:all var(--transition-spring);flex-shrink:0;color:#fff;position:relative}
+        .service-icon{width:72px;height:72px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin-bottom:var(--spacing-xl);transition:all var(--transition-spring);flex-shrink:0;color:#fff}
         .service-icon.blue{background:linear-gradient(135deg,#2a3a5c,#1e2a4a)}
         .service-icon.orange{background:linear-gradient(135deg,var(--ember-500),var(--ember-600))}
         .service-icon.dark-blue{background:linear-gradient(135deg,#151d35,#0b0f1a)}
         .service-card:hover .service-icon{transform:scale(1.15) rotate(8deg)}
         .service-card h3{font-size:1.35rem;color:var(--text-heading);margin-bottom:var(--spacing-md)}
         .service-card p{color:var(--text-muted);font-size:0.98rem;margin-bottom:var(--spacing-lg);flex-grow:1;line-height:1.75}
-        .service-features{display:flex;flex-direction:column;gap:var(--spacing-sm);flex-grow:0}
+        .service-features{display:flex;flex-direction:column;gap:var(--spacing-sm)}
         .service-feature{display:flex;align-items:center;gap:var(--spacing-sm);font-size:0.92rem;color:var(--text-body);padding:var(--spacing-xs) 0}
         .service-feature i{color:var(--ember-500);font-size:0.75rem;width:20px}
 
@@ -310,7 +277,7 @@
         .products .section-title{color:#fff}
         .products .section-title .accent-line{background:linear-gradient(90deg,var(--ember-500),var(--ember-300))}
         .products .section-subtitle{color:rgba(255,255,255,0.55)}
-        .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--spacing-xl);position:relative;z-index:1}
+        .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:var(--spacing-xl);position:relative;z-index:1}
         .product-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-lg);overflow:hidden;transition:all var(--transition-slow);cursor:default;display:flex;flex-direction:column;backdrop-filter:blur(12px)}
         .product-card:hover{transform:translateY(-10px);background:rgba(255,255,255,0.09);box-shadow:0 25px 60px rgba(0,0,0,0.4);border-color:rgba(232,121,43,0.35)}
         .product-img{aspect-ratio:4/3;overflow:hidden;position:relative}
@@ -320,8 +287,10 @@
         .product-card:hover .product-img-overlay{opacity:1}
         .product-img-overlay span{color:var(--ember-300);font-family:var(--font-mono);font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:2px}
         .product-info{padding:var(--spacing-xl);flex-grow:1;display:flex;flex-direction:column}
-        .product-info h4{font-family:var(--font-heading);color:#fff;font-size:1.15rem;margin-bottom:var(--spacing-sm)}
-        .product-info p{color:rgba(255,255,255,0.55);font-size:0.92rem;flex-grow:1;line-height:1.7}
+        .product-info h4{font-family:var(--font-heading);color:#fff;font-size:1.1rem;margin-bottom:var(--spacing-sm)}
+        .product-info p{color:rgba(255,255,255,0.55);font-size:0.88rem;flex-grow:1;line-height:1.65;margin-bottom:0}
+        .product-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:var(--spacing-md);padding-top:var(--spacing-md);border-top:1px solid rgba(255,255,255,0.07)}
+        .product-tag-pill{padding:3px 9px;background:rgba(232,121,43,0.1);border:1px solid rgba(232,121,43,0.2);border-radius:var(--radius-full);font-family:var(--font-mono);font-size:0.62rem;color:var(--ember-300);font-weight:600;white-space:nowrap}
 
         /* ============ PROJECTS ============ */
         .projects{padding:var(--section-padding) 0;background:var(--bg-primary);position:relative}
@@ -377,7 +346,6 @@
         .partner-item{display:flex;align-items:center;gap:var(--spacing-md);white-space:nowrap;opacity:0.4;transition:opacity var(--transition);font-family:var(--font-heading);font-size:1.3rem;font-weight:700;color:var(--text-muted);letter-spacing:1px}
         .partner-item:hover{opacity:0.8}
         .partner-item i{font-size:1.6rem;color:var(--ember-400)}
-        @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
         /* ============ CONTACT ============ */
         .contact{padding:var(--section-padding) 0;background:var(--bg-primary);position:relative}
@@ -416,6 +384,7 @@
         .footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(232,121,43,0.3),transparent)}
         .footer-grid{display:grid;grid-template-columns:2fr repeat(3,1fr);gap:clamp(2rem,5vw,4rem);padding-bottom:4rem;border-bottom:1px solid rgba(255,255,255,0.06);position:relative;z-index:1}
         .footer-brand p{margin-top:var(--spacing-md);font-size:0.95rem;line-height:1.85;color:rgba(255,255,255,0.45)}
+        .footer-motto{display:inline-block;margin-top:var(--spacing-sm);font-family:var(--font-heading);font-size:0.95rem;font-style:italic;color:var(--ember-400);letter-spacing:0.3px}
         .footer-social{display:flex;gap:var(--spacing-sm);margin-top:var(--spacing-xl)}
         .footer-social a{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);transition:all var(--transition-spring);background:rgba(255,255,255,0.03)}
         .footer-social a:hover{background:var(--ember-500);border-color:var(--ember-500);color:#fff;transform:translateY(-4px) scale(1.1)}
@@ -465,6 +434,8 @@
             .project-item:first-child{grid-column:span 2}
             .footer-grid{grid-template-columns:repeat(2,1fr)}
             .contact-grid{grid-template-columns:1fr}
+            .vision-mission-grid{grid-template-columns:1fr}
+            .about-values{grid-template-columns:1fr 1fr}
         }
         @media(max-width:768px){
             :root{--nav-height:70px}
@@ -487,13 +458,13 @@
             .about-img-float{width:140px;height:100px;right:-10px;top:-15px}
             .cursor-glow{display:none}
             .orbit-ring{display:none}
+            .about-values{grid-template-columns:1fr}
         }
         @media(max-width:480px){
             .hero h1{font-size:2.4rem}
             .hero-desc{font-size:1.05rem}
             .hero-stats{flex-direction:column;gap:var(--spacing-lg);align-items:center}
             .hero-stat{min-width:auto}
-            .about-values{grid-template-columns:1fr}
             .products-grid{grid-template-columns:1fr}
             .container{padding:0 var(--spacing-lg)}
             .back-to-top{bottom:20px;right:20px;width:46px;height:46px}
@@ -538,9 +509,7 @@
             <a href="#contact" class="btn btn-primary">Get Quote</a>
         </div>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </button>
     </div>
 </nav>
@@ -557,10 +526,10 @@
     <a href="#contact" class="btn btn-primary" style="margin-top:var(--spacing-xl);">Get Quote</a>
 </div>
 
-<!-- ==================== HERO SECTION ==================== -->
+<!-- ==================== HERO ==================== -->
 <section class="hero" id="hero">
     <div class="hero-bg">
-        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80" alt="Construction site">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80" alt="Construction materials warehouse">
     </div>
     <div class="hero-grid-overlay"></div>
     <div class="hero-particles">
@@ -574,34 +543,34 @@
         <div class="hero-content">
             <div class="hero-badge">
                 <i class="fas fa-star"></i>
-                <span>Building Excellence Since 2010</span>
+                <span>Ethiopia's Trusted One-Stop Supplier</span>
             </div>
-            <h1>Crafting <span class="accent">Tomorrow's</span> Landscapes Today</h1>
-            <p class="hero-desc">YG Trade & Construction PLC is your premier partner for construction materials, technology solutions, and commercial building construction across East Africa. We deliver quality, innovation, and reliability in every project.</p>
+            <h1>Your <span class="accent">Complete</span> Construction Partner</h1>
+            <p class="hero-desc">YG Trade & Construction PLC provides integrated, one-stop construction material supply solutions across Ethiopia — from cement and rebar to finishing, plumbing, electrical, and roofing. Reliable supply, competitive pricing, and uncompromising quality on every order.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">
                     <i class="fas fa-paper-plane"></i>
-                    Start Your Project
+                    Request a Quote
                 </a>
-                <a href="#projects" class="btn btn-outline">
-                    <i class="fas fa-building"></i>
-                    View Our Work
+                <a href="#products" class="btn btn-outline">
+                    <i class="fas fa-boxes"></i>
+                    View Products
                 </a>
             </div>
             <div class="hero-stats">
                 <div class="hero-stat">
-                    <div class="hero-stat-val" data-count="200">0<span class="plus">+</span></div>
-                    <div class="hero-stat-label">Projects</div>
+                    <div class="hero-stat-val" data-count="500">0<span class="plus">+</span></div>
+                    <div class="hero-stat-label">Projects Supplied</div>
                     <div class="hero-stat-bar"><div class="hero-stat-bar-fill"></div></div>
                 </div>
                 <div class="hero-stat">
-                    <div class="hero-stat-val" data-count="14">0<span class="plus">+</span></div>
-                    <div class="hero-stat-label">Years</div>
+                    <div class="hero-stat-val" data-count="9">0<span class="plus">+</span></div>
+                    <div class="hero-stat-label">Product Lines</div>
                     <div class="hero-stat-bar"><div class="hero-stat-bar-fill"></div></div>
                 </div>
                 <div class="hero-stat">
-                    <div class="hero-stat-val" data-count="75">0<span class="plus">+</span></div>
-                    <div class="hero-stat-label">Experts</div>
+                    <div class="hero-stat-val" data-count="300">0<span class="plus">+</span></div>
+                    <div class="hero-stat-label">Clients Served</div>
                     <div class="hero-stat-bar"><div class="hero-stat-bar-fill"></div></div>
                 </div>
                 <div class="hero-stat">
@@ -618,47 +587,63 @@
     </div>
 </section>
 
-<!-- ==================== ABOUT SECTION ==================== -->
+<!-- ==================== ABOUT ==================== -->
 <section class="about" id="about">
     <div class="container">
         <div class="section-header reveal">
-            <div class="section-label"><i class="fas fa-circle" style="font-size:0.35rem"></i> Our Story</div>
-            <h2 class="section-title">Building Trust Since 2010<span class="accent-line"></span></h2>
-            <p class="section-subtitle">We are a trusted partner in construction, import/export, and technology solutions, committed to delivering superior quality and innovative approaches to every project.</p>
+            <div class="section-label"><i class="fas fa-circle" style="font-size:0.35rem"></i> Who We Are</div>
+            <h2 class="section-title">Ethiopia's Most Trusted Construction Supplier<span class="accent-line"></span></h2>
+            <p class="section-subtitle">YG Trade & Construction PLC is a trusted, integrated supplier of high-quality construction materials — committed to simplifying the supply process for contractors, developers, businesses, and individual builders across Ethiopia.</p>
         </div>
         <div class="about-grid">
             <div class="about-visual reveal-left">
                 <div class="about-img-main">
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Construction experts at work">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Construction material supply operations">
                 </div>
                 <div class="about-img-float">
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&q=80" alt="Construction planning">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&q=80" alt="Quality materials">
                 </div>
                 <div class="about-experience">
-                    <div class="about-experience-num">14+</div>
-                    <div class="about-experience-text">Years Excellence</div>
+                    <div class="about-experience-num">YG</div>
+                    <div class="about-experience-text">Trade & Construction</div>
                 </div>
             </div>
             <div class="about-text reveal-right">
-                <h3>Excellence in Construction & Materials</h3>
-                <p>YG Trade & Construction PLC has established itself as a leader in the construction industry, specializing in commercial building construction and the import/export of high-quality construction materials and technology devices.</p>
-                <p>Our expertise spans across ceramic tiles, electrical fittings, plumbing materials, and modern technology solutions for smart buildings. We serve clients across Ethiopia and export to neighboring countries with unmatched quality standards.</p>
+                <h3>One-Stop Solutions for Every Build</h3>
+                <p>With a strong commitment to reliability, competitive pricing, and consistent quality, YG Trade & Construction PLC aims to simplify the construction supply process while delivering exceptional customer service to every client.</p>
+                <p>We serve contractors, developers, businesses, and individual builders — providing everything they need from a single, dependable source, so they can focus on building rather than sourcing.</p>
+
+                <!-- Vision & Mission -->
+                <div class="vision-mission-grid stagger-children">
+                    <div class="vm-card vision reveal" style="--i:0">
+                        <div class="vm-label v"><i class="fas fa-eye"></i> Our Vision</div>
+                        <p>To become Ethiopia's most trusted and dependable one-stop supplier of quality construction materials at competitive prices.</p>
+                    </div>
+                    <div class="vm-card mission reveal" style="--i:1">
+                        <div class="vm-label m"><i class="fas fa-bullseye"></i> Our Mission</div>
+                        <p>To deliver integrated construction material solutions through reliable service, consistent product quality, and customer-focused operational efficiency.</p>
+                    </div>
+                </div>
+
+                <!-- Motto -->
+                <div class="motto-strip reveal">
+                    <blockquote>"Your Complete Construction Partner."</blockquote>
+                    <cite>— YG Trade & Construction PLC Motto</cite>
+                </div>
+
+                <!-- Core Values -->
                 <div class="about-values stagger-children">
                     <div class="about-value reveal" style="--i:0">
-                        <i class="fas fa-medal"></i>
-                        <span>Quality Assurance</span>
+                        <i class="fas fa-link"></i>
+                        <span>Integration</span>
                     </div>
                     <div class="about-value reveal" style="--i:1">
-                        <i class="fas fa-clock"></i>
-                        <span>Timely Delivery</span>
+                        <i class="fas fa-medal"></i>
+                        <span>Quality</span>
                     </div>
                     <div class="about-value reveal" style="--i:2">
-                        <i class="fas fa-handshake"></i>
-                        <span>Client Partnership</span>
-                    </div>
-                    <div class="about-value reveal" style="--i:3">
-                        <i class="fas fa-leaf"></i>
-                        <span>Sustainable Practices</span>
+                        <i class="fas fa-balance-scale"></i>
+                        <span>Accountability</span>
                     </div>
                 </div>
             </div>
@@ -666,28 +651,28 @@
     </div>
 </section>
 
-<!-- ==================== SERVICES SECTION ==================== -->
+<!-- ==================== SERVICES ==================== -->
 <section class="services" id="services">
     <div class="container">
         <div class="section-header reveal">
             <div class="section-label"><i class="fas fa-circle" style="font-size:0.35rem"></i> What We Do</div>
-            <h2 class="section-title">Comprehensive Services<span class="accent-line"></span></h2>
-            <p class="section-subtitle">From construction to technology integration, we offer end-to-end solutions that meet the highest standards of quality and innovation.</p>
+            <h2 class="section-title">Comprehensive Supply Services<span class="accent-line"></span></h2>
+            <p class="section-subtitle">From structural materials to finishing touches, we provide end-to-end construction supply solutions tailored to your project requirements — with reliable delivery and professional service throughout.</p>
         </div>
         <div class="services-grid stagger-children">
             <div class="service-card reveal" style="--i:0">
                 <div class="service-card-img">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="Commercial construction">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Construction material supply">
                 </div>
                 <div class="service-icon blue">
-                    <i class="fas fa-building"></i>
+                    <i class="fas fa-boxes"></i>
                 </div>
-                <h3>Commercial Construction</h3>
-                <p>Complete commercial building construction from concept to completion, including office complexes, retail spaces, and institutional buildings with modern architecture.</p>
+                <h3>One-Stop Material Supply</h3>
+                <p>Complete construction material supply from a single source — covering structural, finishing, MEP, and specialty materials for residential and commercial projects of any scale.</p>
                 <div class="service-features">
-                    <div class="service-feature"><i class="fas fa-check"></i><span>Project Management</span></div>
-                    <div class="service-feature"><i class="fas fa-check"></i><span>Architectural Design</span></div>
-                    <div class="service-feature"><i class="fas fa-check"></i><span>Quality Control</span></div>
+                    <div class="service-feature"><i class="fas fa-check"></i><span>Cement, Rebar & Structural Materials</span></div>
+                    <div class="service-feature"><i class="fas fa-check"></i><span>Finishing, Plumbing & Electrical</span></div>
+                    <div class="service-feature"><i class="fas fa-check"></i><span>Roofing, Paint & Specialty Products</span></div>
                 </div>
             </div>
             <div class="service-card reveal" style="--i:1">
@@ -698,92 +683,206 @@
                     <i class="fas fa-shipping-fast"></i>
                 </div>
                 <h3>Import & Export</h3>
-                <p>Global sourcing and distribution of premium construction materials, ceramic tiles, and building technology solutions with efficient logistics management.</p>
+                <p>Global sourcing and distribution of premium construction materials with efficient logistics management — ensuring consistent stock availability and competitive international pricing for our clients.</p>
                 <div class="service-features">
-                    <div class="service-feature"><i class="fas fa-check"></i><span>Global Sourcing</span></div>
-                    <div class="service-feature"><i class="fas fa-check"></i><span>Customs Clearance</span></div>
+                    <div class="service-feature"><i class="fas fa-check"></i><span>Global Supplier Network</span></div>
+                    <div class="service-feature"><i class="fas fa-check"></i><span>Customs Clearance Support</span></div>
                     <div class="service-feature"><i class="fas fa-check"></i><span>Logistics Management</span></div>
                 </div>
             </div>
             <div class="service-card reveal" style="--i:2">
                 <div class="service-card-img">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80" alt="Technology integration">
+                    <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=600&q=80" alt="Project based delivery">
                 </div>
                 <div class="service-icon dark-blue">
-                    <i class="fas fa-microchip"></i>
+                    <i class="fas fa-truck"></i>
                 </div>
-                <h3>Technology Integration</h3>
-                <p>Smart building solutions, security systems, and technology devices for modern commercial and residential spaces with future-ready infrastructure.</p>
+                <h3>Project-Based Delivery</h3>
+                <p>Tailored supply plans for large-scale construction projects — scheduled deliveries, bulk pricing, and dedicated account management to keep your project on time and on budget.</p>
                 <div class="service-features">
-                    <div class="service-feature"><i class="fas fa-check"></i><span>Smart Building Systems</span></div>
-                    <div class="service-feature"><i class="fas fa-check"></i><span>Security & Surveillance</span></div>
-                    <div class="service-feature"><i class="fas fa-check"></i><span>Network Infrastructure</span></div>
+                    <div class="service-feature"><i class="fas fa-check"></i><span>Scheduled Site Deliveries</span></div>
+                    <div class="service-feature"><i class="fas fa-check"></i><span>Bulk & Contract Pricing</span></div>
+                    <div class="service-feature"><i class="fas fa-check"></i><span>Dedicated Account Manager</span></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ==================== PRODUCTS SECTION ==================== -->
+<!-- ==================== PRODUCTS ==================== -->
 <section class="products" id="products">
     <div class="container">
         <div class="section-header reveal">
-            <div class="section-label"><i class="fas fa-circle" style="font-size:0.35rem"></i> Premium Materials</div>
-            <h2 class="section-title">Quality Products<span class="accent-line"></span></h2>
-            <p class="section-subtitle">We supply high-quality imported and local construction materials that meet international standards and exceed expectations.</p>
+            <div class="section-label"><i class="fas fa-circle" style="font-size:0.35rem"></i> Our Product Range</div>
+            <h2 class="section-title">9 Product Lines, One Supplier<span class="accent-line"></span></h2>
+            <p class="section-subtitle">We supply all the materials your project needs — from the foundation to the final coat of paint — so you can source everything from one reliable partner.</p>
         </div>
         <div class="products-grid stagger-children">
+
+            <!-- 1. Cement -->
             <div class="product-card reveal" style="--i:0">
                 <div class="product-img">
-                    <img src="https://images.unsplash.com/photo-1615529328519-3c76b675cd39?w=600&q=80" alt="Ceramic tiles">
-                    <div class="product-img-overlay"><span>Premium Quality</span></div>
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&q=80" alt="Cement">
+                    <div class="product-img-overlay"><span>In Stock</span></div>
                 </div>
                 <div class="product-info">
-                    <h4>Ceramic & Porcelain Tiles</h4>
-                    <p>Premium quality tiles for floors, walls, and exteriors in various designs and finishes for residential and commercial spaces.</p>
+                    <h4>Cement</h4>
+                    <p>High-strength Portland and blended cements sourced from leading manufacturers, suitable for all structural and general construction applications.</p>
+                    <div class="product-tags">
+                        <span class="product-tag-pill">Portland OPC</span>
+                        <span class="product-tag-pill">PPC Blend</span>
+                        <span class="product-tag-pill">Rapid Set</span>
+                    </div>
                 </div>
             </div>
+
+            <!-- 2. Rebar -->
             <div class="product-card reveal" style="--i:1">
                 <div class="product-img">
-                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80" alt="Electrical fittings">
-                    <div class="product-img-overlay"><span>Modern Solutions</span></div>
+                    <img src="https://images.unsplash.com/photo-1558618047-f4a8c68fb4be?w=600&q=80" alt="Reinforcement steel rebar">
+                    <div class="product-img-overlay"><span>In Stock</span></div>
                 </div>
                 <div class="product-info">
-                    <h4>Electrical Fittings</h4>
-                    <p>Switches, sockets, cables, and complete electrical solutions for buildings with safety and efficiency in mind.</p>
+                    <h4>Reinforcement Steel (Rebar)</h4>
+                    <p>Grade-certified deformed and plain steel bars for concrete reinforcement — available in multiple diameters and lengths for structural frameworks.</p>
+                    <div class="product-tags">
+                        <span class="product-tag-pill">Deformed Bar</span>
+                        <span class="product-tag-pill">Plain Bar</span>
+                        <span class="product-tag-pill">Grade 60</span>
+                    </div>
                 </div>
             </div>
+
+            <!-- 3. HCB -->
             <div class="product-card reveal" style="--i:2">
                 <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1597423498219-04418210827d?w=600&q=80" alt="Hollow concrete blocks">
+                    <div class="product-img-overlay"><span>In Stock</span></div>
+                </div>
+                <div class="product-info">
+                    <h4>Hollow Concrete Blocks (HCB)</h4>
+                    <p>Durable, load-bearing hollow concrete blocks for wall construction — manufactured to standard dimensions with consistent compressive strength.</p>
+                    <div class="product-tags">
+                        <span class="product-tag-pill">Standard HCB</span>
+                        <span class="product-tag-pill">Load Bearing</span>
+                        <span class="product-tag-pill">Partition</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Aggregates -->
+            <div class="product-card reveal" style="--i:3">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=600&q=80" alt="Aggregates sand gravel">
+                    <div class="product-img-overlay"><span>In Stock</span></div>
+                </div>
+                <div class="product-info">
+                    <h4>Aggregates</h4>
+                    <p>Quality-graded sand, gravel, and crushed stone for concrete mixing, backfilling, drainage, and road sub-base applications.</p>
+                    <div class="product-tags">
+                        <span class="product-tag-pill">River Sand</span>
+                        <span class="product-tag-pill">Gravel</span>
+                        <span class="product-tag-pill">Crushed Stone</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Finishing Materials -->
+            <div class="product-card reveal" style="--i:4">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1615529328519-3c76b675cd39?w=600&q=80" alt="Finishing materials tiles">
+                    <div class="product-img-overlay"><span>Premium Range</span></div>
+                </div>
+                <div class="product-info">
+                    <h4>Finishing Materials</h4>
+                    <p>Tiles, plaster, gypsum board, adhesives, and grout for interior and exterior finishing — available in a wide range of designs and grades.</p>
+                    <div class="product-tags">
+                        <span class="product-tag-pill">Ceramic Tiles</span>
+                        <span class="product-tag-pill">Plaster</span>
+                        <span class="product-tag-pill">Gypsum Board</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Plumbing Materials -->
+            <div class="product-card reveal" style="--i:5">
+                <div class="product-img">
                     <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600&q=80" alt="Plumbing materials">
-                    <div class="product-img-overlay"><span>Durable Systems</span></div>
+                    <div class="product-img-overlay"><span>Full Range</span></div>
                 </div>
                 <div class="product-info">
                     <h4>Plumbing Materials</h4>
-                    <p>Pipes, fittings, fixtures, and complete plumbing systems for residential and commercial use with long-lasting quality.</p>
+                    <p>Complete plumbing supply including pipes, fittings, valves, and sanitary fixtures — meeting international quality and safety standards.</p>
+                    <div class="product-tags">
+                        <span class="product-tag-pill">PVC / PPR Pipes</span>
+                        <span class="product-tag-pill">Fittings</span>
+                        <span class="product-tag-pill">Sanitary Ware</span>
+                    </div>
                 </div>
             </div>
-            <div class="product-card reveal" style="--i:3">
+
+            <!-- 7. Electrical Materials -->
+            <div class="product-card reveal" style="--i:6">
                 <div class="product-img">
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="Technology devices">
-                    <div class="product-img-overlay"><span>Smart Solutions</span></div>
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80" alt="Electrical materials">
+                    <div class="product-img-overlay"><span>Full Range</span></div>
                 </div>
                 <div class="product-info">
-                    <h4>Technology Devices</h4>
-                    <p>Smart home devices, security systems, and office technology solutions for modern living and working environments.</p>
+                    <h4>Electrical Materials</h4>
+                    <p>Cables, conduits, switches, sockets, circuit breakers, and distribution boards — certified for safety and compliant with Ethiopian electrical standards.</p>
+                    <div class="product-tags">
+                        <span class="product-tag-pill">Cables & Conduit</span>
+                        <span class="product-tag-pill">Switches & Sockets</span>
+                        <span class="product-tag-pill">DB Boards</span>
+                    </div>
                 </div>
             </div>
+
+            <!-- 8. Roofing Materials -->
+            <div class="product-card reveal" style="--i:7">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Roofing materials">
+                    <div class="product-img-overlay"><span>In Stock</span></div>
+                </div>
+                <div class="product-info">
+                    <h4>Roofing Materials</h4>
+                    <p>EGA sheets, metal roofing, roofing membranes, insulation, and guttering systems for durable weatherproof roofs on residential and commercial structures.</p>
+                    <div class="product-tags">
+                        <span class="product-tag-pill">EGA Sheet</span>
+                        <span class="product-tag-pill">Metal Roofing</span>
+                        <span class="product-tag-pill">Waterproof Membrane</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Paint & Related Products -->
+            <div class="product-card reveal" style="--i:8">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=80" alt="Paint and related products">
+                    <div class="product-img-overlay"><span>Wide Selection</span></div>
+                </div>
+                <div class="product-info">
+                    <h4>Paint & Related Products</h4>
+                    <p>Interior and exterior paints, primers, sealers, and waterproofing coatings — available in a full colour range and various formulations for every surface.</p>
+                    <div class="product-tags">
+                        <span class="product-tag-pill">Interior Paint</span>
+                        <span class="product-tag-pill">Exterior Paint</span>
+                        <span class="product-tag-pill">Primer & Sealer</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
-<!-- ==================== PROJECTS SECTION ==================== -->
+<!-- ==================== PROJECTS ==================== -->
 <section class="projects" id="projects">
     <div class="container">
         <div class="section-header reveal">
             <div class="section-label"><i class="fas fa-circle" style="font-size:0.35rem"></i> Our Portfolio</div>
-            <h2 class="section-title">Featured Projects<span class="accent-line"></span></h2>
-            <p class="section-subtitle">A showcase of our completed commercial building projects and construction achievements that demonstrate our expertise.</p>
+            <h2 class="section-title">Projects We've Supplied<span class="accent-line"></span></h2>
+            <p class="section-subtitle">A showcase of landmark construction projects across Ethiopia that have been built with materials supplied by YG Trade & Construction PLC.</p>
         </div>
         <div class="projects-showcase stagger-children">
             <div class="project-item reveal" style="--i:0">
@@ -791,15 +890,15 @@
                 <div class="project-overlay">
                     <div class="project-tag">Completed 2023</div>
                     <h3>Addis Business Plaza</h3>
-                    <p>A 12-story commercial complex with smart office spaces, retail areas, and underground parking facilities.</p>
+                    <p>Full material supply for a 12-story commercial complex — cement, rebar, HCB, finishing tiles, plumbing, and electrical systems throughout.</p>
                 </div>
             </div>
             <div class="project-item reveal" style="--i:1">
-                <img src="https://images.unsplash.com/photo-1562516155-e0c1ee44059b?w=800&q=80" alt="Tech Institute Campus">
+                <img src="https://images.unsplash.com/photo-1562516155-e0c1ee44059b?w=800&q=80" alt="Residential Complex">
                 <div class="project-overlay">
                     <div class="project-tag">Completed 2022</div>
-                    <h3>Tech Institute Campus</h3>
-                    <p>Modern educational facility with classrooms, labs, and student amenities designed for optimal learning.</p>
+                    <h3>Sunrise Residential Complex</h3>
+                    <p>Structural and finishing material supply for a 200-unit residential development, including aggregates, blocks, roofing, and paint.</p>
                 </div>
             </div>
             <div class="project-item reveal" style="--i:2">
@@ -807,15 +906,15 @@
                 <div class="project-overlay">
                     <div class="project-tag">Completed 2023</div>
                     <h3>Mega Mall Development</h3>
-                    <p>Shopping complex with 50+ retail spaces, food court, and entertainment zone for premium shopping experience.</p>
+                    <p>End-to-end material supply for a major retail complex, covering all nine product lines from foundation to façade finishing.</p>
                 </div>
             </div>
             <div class="project-item reveal" style="--i:3">
-                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Boutique Hotel">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Hospitality Project">
                 <div class="project-overlay">
                     <div class="project-tag">Ongoing</div>
-                    <h3>Boutique Hotel</h3>
-                    <p>Luxury hotel with 80 rooms, conference facilities, and wellness center for premium hospitality experience.</p>
+                    <h3>Grand Hospitality Hotel</h3>
+                    <p>Ongoing supply partner for an 80-room luxury hotel — managing scheduled deliveries of all construction and finishing materials on-site.</p>
                 </div>
             </div>
         </div>
@@ -827,29 +926,39 @@
     <div class="container">
         <div class="section-header reveal">
             <div class="section-label"><i class="fas fa-circle" style="font-size:0.35rem"></i> Why Choose Us</div>
-            <h2 class="section-title">Our Advantages<span class="accent-line"></span></h2>
-            <p class="section-subtitle">We stand out in the construction industry through our commitment to excellence, innovation, and client satisfaction.</p>
+            <h2 class="section-title">Built on Three Core Values<span class="accent-line"></span></h2>
+            <p class="section-subtitle">Our operations are grounded in Integration, Quality, and Accountability — backed by competitive pricing, timely delivery, and dedicated customer service.</p>
         </div>
         <div class="why-us-grid stagger-children">
             <div class="why-card reveal" style="--i:0">
-                <div class="why-icon"><i class="fas fa-award"></i></div>
-                <h4>Quality Assurance</h4>
-                <p>All materials and workmanship meet international quality standards with rigorous testing and quality control.</p>
+                <div class="why-icon"><i class="fas fa-link"></i></div>
+                <h4>Integration</h4>
+                <p>Complete, end-to-end construction supply solutions from a single source — eliminating the complexity of managing multiple suppliers on a project.</p>
             </div>
             <div class="why-card reveal" style="--i:1">
-                <div class="why-icon"><i class="fas fa-shipping-fast"></i></div>
-                <h4>Timely Delivery</h4>
-                <p>We respect project timelines and deliver as promised, every time, with efficient project management.</p>
+                <div class="why-icon"><i class="fas fa-medal"></i></div>
+                <h4>Quality</h4>
+                <p>High standards maintained across every product and service category — with rigorous sourcing criteria ensuring materials meet or exceed specifications.</p>
             </div>
             <div class="why-card reveal" style="--i:2">
-                <div class="why-icon"><i class="fas fa-handshake"></i></div>
-                <h4>Client Partnership</h4>
-                <p>We work collaboratively with clients to ensure their vision becomes reality with transparent communication.</p>
+                <div class="why-icon"><i class="fas fa-balance-scale"></i></div>
+                <h4>Accountability</h4>
+                <p>We operate with integrity, transparency, and full responsibility — providing honest advice, accurate quotations, and reliable follow-through on every commitment.</p>
             </div>
             <div class="why-card reveal" style="--i:3">
+                <div class="why-icon"><i class="fas fa-tag"></i></div>
+                <h4>Competitive Pricing</h4>
+                <p>Direct supplier relationships and efficient operations allow us to offer consistently competitive prices without compromising on material quality.</p>
+            </div>
+            <div class="why-card reveal" style="--i:4">
+                <div class="why-icon"><i class="fas fa-shipping-fast"></i></div>
+                <h4>Reliable Delivery</h4>
+                <p>On-time delivery to your site or warehouse, every time — with logistics coordination built around your project schedule and phasing plan.</p>
+            </div>
+            <div class="why-card reveal" style="--i:5">
                 <div class="why-icon"><i class="fas fa-headset"></i></div>
-                <h4>24/7 Support</h4>
-                <p>Round-the-clock customer service and technical support for all our clients with dedicated account managers.</p>
+                <h4>Customer Service</h4>
+                <p>Professional, responsive support from inquiry through to delivery — with dedicated teams ensuring smooth and efficient project execution at every stage.</p>
             </div>
         </div>
     </div>
@@ -860,20 +969,20 @@
     <div class="container">
         <div class="section-header reveal">
             <div class="section-label"><i class="fas fa-circle" style="font-size:0.35rem"></i> Client Voices</div>
-            <h2 class="section-title">What Clients Say<span class="accent-line"></span></h2>
-            <p class="section-subtitle">Our clients' success stories speak to the quality and dedication we bring to every project.</p>
+            <h2 class="section-title">What Our Clients Say<span class="accent-line"></span></h2>
+            <p class="section-subtitle">Hear from contractors, developers, and builders who trust YG Trade & Construction PLC as their complete construction supply partner.</p>
         </div>
         <div class="testimonial-grid stagger-children">
             <div class="testimonial-card reveal" style="--i:0">
                 <div class="testimonial-stars">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
-                <p class="testimonial-text">"YG Trade delivered our office complex two weeks ahead of schedule. The quality of materials and workmanship exceeded our expectations. Truly a world-class partner."</p>
+                <p class="testimonial-text">"YG Trade supplied all our structural and finishing materials on a single contract. Their pricing was unbeatable and every delivery arrived on time. Truly a one-stop partner."</p>
                 <div class="testimonial-author">
                     <div class="testimonial-avatar">AB</div>
                     <div>
                         <div class="testimonial-author-name">Abebe Bekele</div>
-                        <div class="testimonial-author-role">CEO, Ethio Investments Group</div>
+                        <div class="testimonial-author-role">General Contractor, Addis Ababa</div>
                     </div>
                 </div>
             </div>
@@ -881,7 +990,7 @@
                 <div class="testimonial-stars">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
-                <p class="testimonial-text">"The ceramic tiles we imported through YG Trade are exceptional. Their logistics team handled everything seamlessly from order to delivery. Highly recommended."</p>
+                <p class="testimonial-text">"We needed reliable cement and rebar supply for a 200-unit housing project. YG Trade handled the entire logistics and kept our site running without a single material delay."</p>
                 <div class="testimonial-author">
                     <div class="testimonial-avatar">SM</div>
                     <div>
@@ -894,12 +1003,12 @@
                 <div class="testimonial-stars">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                 </div>
-                <p class="testimonial-text">"Their smart building solutions transformed our new campus into a modern, energy-efficient facility. The technology integration was flawless and future-proof."</p>
+                <p class="testimonial-text">"What stands out with YG Trade is their accountability. When there was a small delivery discrepancy, they resolved it the same day without any pushback. That's the kind of supplier you want."</p>
                 <div class="testimonial-author">
                     <div class="testimonial-avatar">DT</div>
                     <div>
                         <div class="testimonial-author-name">Daniel Tesfaye</div>
-                        <div class="testimonial-author-role">Provost, Addis Tech University</div>
+                        <div class="testimonial-author-role">Site Manager, Metro Properties</div>
                     </div>
                 </div>
             </div>
@@ -911,11 +1020,11 @@
 <section class="cta-banner">
     <div class="container">
         <div class="cta-banner-inner reveal">
-            <h2>Ready to Build Something Remarkable?</h2>
-            <p>Whether you need construction materials, smart building solutions, or a full commercial build — our team is ready to bring your vision to life.</p>
+            <h2>Ready to Source Smarter?</h2>
+            <p>Stop juggling multiple suppliers. Contact YG Trade & Construction PLC for a single, reliable source of all your construction materials — at competitive prices, delivered on time.</p>
             <a href="#contact" class="btn">
                 <i class="fas fa-arrow-right"></i>
-                Get a Free Consultation
+                Get a Free Quote Today
             </a>
         </div>
     </div>
@@ -925,38 +1034,38 @@
 <section class="partners">
     <div class="partners-label">Trusted By Industry Leaders</div>
     <div class="partners-track">
-        <div class="partner-item"><i class="fas fa-city"></i> Ethio Investments</div>
+        <div class="partner-item"><i class="fas fa-hard-hat"></i> Ethio Contractors</div>
         <div class="partner-item"><i class="fas fa-building"></i> Sunrise Developers</div>
-        <div class="partner-item"><i class="fas fa-university"></i> Addis Tech University</div>
+        <div class="partner-item"><i class="fas fa-city"></i> Metro Properties</div>
         <div class="partner-item"><i class="fas fa-hotel"></i> Grand Hotels Group</div>
         <div class="partner-item"><i class="fas fa-industry"></i> EastAfrica Corp</div>
-        <div class="partner-item"><i class="fas fa-landmark"></i> Metro Properties</div>
+        <div class="partner-item"><i class="fas fa-landmark"></i> Addis Investments</div>
         <div class="partner-item"><i class="fas fa-store"></i> Unity Mall Group</div>
         <div class="partner-item"><i class="fas fa-hospital"></i> HealthBuild Ltd</div>
         <!-- Duplicate for seamless loop -->
-        <div class="partner-item"><i class="fas fa-city"></i> Ethio Investments</div>
+        <div class="partner-item"><i class="fas fa-hard-hat"></i> Ethio Contractors</div>
         <div class="partner-item"><i class="fas fa-building"></i> Sunrise Developers</div>
-        <div class="partner-item"><i class="fas fa-university"></i> Addis Tech University</div>
+        <div class="partner-item"><i class="fas fa-city"></i> Metro Properties</div>
         <div class="partner-item"><i class="fas fa-hotel"></i> Grand Hotels Group</div>
         <div class="partner-item"><i class="fas fa-industry"></i> EastAfrica Corp</div>
-        <div class="partner-item"><i class="fas fa-landmark"></i> Metro Properties</div>
+        <div class="partner-item"><i class="fas fa-landmark"></i> Addis Investments</div>
         <div class="partner-item"><i class="fas fa-store"></i> Unity Mall Group</div>
         <div class="partner-item"><i class="fas fa-hospital"></i> HealthBuild Ltd</div>
     </div>
 </section>
 
-<!-- ==================== CONTACT SECTION ==================== -->
+<!-- ==================== CONTACT ==================== -->
 <section class="contact" id="contact">
     <div class="container">
         <div class="section-header reveal">
             <div class="section-label"><i class="fas fa-circle" style="font-size:0.35rem"></i> Get In Touch</div>
-            <h2 class="section-title">Start Your Project<span class="accent-line"></span></h2>
-            <p class="section-subtitle">Ready to bring your vision to life? Contact us for quotes, consultations, or any inquiries about our services and products.</p>
+            <h2 class="section-title">Request a Quote<span class="accent-line"></span></h2>
+            <p class="section-subtitle">Tell us about your project and material requirements. Our team will prepare a competitive, itemised quote and get back to you within 24 hours.</p>
         </div>
         <div class="contact-grid">
             <div class="contact-info reveal-left">
-                <h3>Let's Build Together</h3>
-                <p>Reach out to discuss your construction needs, material requirements, or technology solutions. Our experienced team is ready to assist you with personalized service.</p>
+                <h3>Let's Supply Your Project</h3>
+                <p>Whether you're a contractor, developer, or individual builder — our experienced supply team is ready to discuss your material needs and provide tailored, cost-effective solutions.</p>
                 <div class="contact-detail">
                     <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
                     <div>
@@ -982,19 +1091,19 @@
                     <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
                     <div>
                         <div class="contact-detail-label">Business Hours</div>
-                        <div class="contact-detail-value">Mon - Fri: 8:00 AM - 6:00 PM</div>
+                        <div class="contact-detail-value">Mon – Fri: 8:00 AM – 6:00 PM</div>
                     </div>
                 </div>
                 <div class="contact-map">
                     <iframe
-                        title="YG Trade & Construction PLC location map"
+                        title="YG Trade & Construction PLC location"
                         src="https://www.google.com/maps/place/Kings+Hotel+Ethiopia+%7C+%E1%8A%AA%E1%8A%95%E1%8C%8D%E1%88%B5+%E1%88%86%E1%89%B4%E1%88%8D+%E1%8A%A2%E1%89%B5%E1%8B%AE%E1%8C%B5%E1%8B%AB/@8.998058,38.7373223,17z/data=!4m9!3m8!1s0x164b842bb59184ff:0x97771b15a7e9c78d!5m2!4m1!1i2!8m2!3d8.9980527!4d38.7398972!16s%2Fg%2F11r8b5pgc?entry=ttu&g_ep=EgoyMDI2MDIxNy4wIKXMDSoASAFQAw%3D%3D"
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
                         allowfullscreen>
                     </iframe>
-                    <a class="contact-map-link" href="https://www.google.com/maps/place/Kings+Hotel+Ethiopia+%7C+%E1%8A%AA%E1%8A%95%E1%8C%8D%E1%88%B5+%E1%88%86%E1%89%B4%E1%88%8D+%E1%8A%A2%E1%89%B5%E1%8B%AE%E1%8C%B5%E1%8B%AB/@8.998058,38.7373223,17z/data=!4m9!3m8!1s0x164b842bb59184ff:0x97771b15a7e9c78d!5m2!4m1!1i2!8m2!3d8.9980527!4d38.7398972!16s%2Fg%2F11r8b5pgc?entry=ttu&g_ep=EgoyMDI2MDIxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                        Open in Google Maps <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                    <a class="contact-map-link" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
+                        Open in Maps <i class="fas fa-external-link-alt"></i>
                     </a>
                 </div>
             </div>
@@ -1003,34 +1112,40 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
-                            <input type="text" id="name" class="form-input" placeholder="Enter your full name" required>
+                            <input type="text" id="name" class="form-input" placeholder="Your full name" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" class="form-input" placeholder="Enter your phone number">
+                            <input type="tel" id="phone" class="form-input" placeholder="Your phone number">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address *</label>
-                        <input type="email" id="email" class="form-input" placeholder="Enter your email address" required>
+                        <input type="email" id="email" class="form-input" placeholder="Your email address" required>
                     </div>
                     <div class="form-group">
-                        <label for="service">Service Interest</label>
+                        <label for="service">Material Category</label>
                         <select id="service" class="form-input">
-                            <option value="">Select a service</option>
-                            <option value="construction">Commercial Construction</option>
-                            <option value="import">Import & Export</option>
-                            <option value="technology">Technology Integration</option>
-                            <option value="materials">Construction Materials</option>
+                            <option value="">Select a product/service</option>
+                            <option value="cement">Cement</option>
+                            <option value="rebar">Reinforcement Steel (Rebar)</option>
+                            <option value="hcb">Hollow Concrete Blocks (HCB)</option>
+                            <option value="aggregates">Aggregates</option>
+                            <option value="finishing">Finishing Materials</option>
+                            <option value="plumbing">Plumbing Materials</option>
+                            <option value="electrical">Electrical Materials</option>
+                            <option value="roofing">Roofing Materials</option>
+                            <option value="paint">Paint & Related Products</option>
+                            <option value="all">Full Project Supply (All Categories)</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="message">Project Details *</label>
-                        <textarea id="message" class="form-input" rows="6" placeholder="Tell us about your project..." required></textarea>
+                        <textarea id="message" class="form-input" rows="6" placeholder="Describe your project, quantities needed, and delivery timeline..." required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary" style="width:100%;padding:1rem 2rem;">
                         <i class="fas fa-paper-plane"></i>
-                        Send Message
+                        Send Enquiry
                     </button>
                 </form>
             </div>
@@ -1046,7 +1161,8 @@
                 <a href="#hero" class="nav-logo">
                     <img src="https://pfst.cf2.poecdn.net/base/image/4fe81cd1a97fd711d83d45bd5328dbd51f29b224e20f598292c4240554ceb48b?w=1600&h=896" alt="YG Trade & Construction PLC" class="nav-logo-img" style="height:56px;">
                 </a>
-                <p>Leading provider of construction materials, technology solutions, and commercial building construction services across East Africa with excellence and integrity.</p>
+                <p>Ethiopia's trusted one-stop supplier of quality construction materials — serving contractors, developers, and builders with reliability, competitive pricing, and exceptional service.</p>
+                <span class="footer-motto">"Your Complete Construction Partner."</span>
                 <div class="footer-social">
                     <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -1066,21 +1182,21 @@
                 </ul>
             </div>
             <div class="footer-links">
-                <h4>Our Services</h4>
+                <h4>Product Lines</h4>
                 <ul>
-                    <li><a href="#services">Commercial Construction</a></li>
-                    <li><a href="#services">Import & Export</a></li>
-                    <li><a href="#services">Technology Integration</a></li>
-                    <li><a href="#products">Material Supply</a></li>
-                    <li><a href="#services">Project Management</a></li>
-                    <li><a href="#services">Consultation</a></li>
+                    <li><a href="#products">Cement</a></li>
+                    <li><a href="#products">Reinforcement Steel</a></li>
+                    <li><a href="#products">Hollow Concrete Blocks</a></li>
+                    <li><a href="#products">Aggregates</a></li>
+                    <li><a href="#products">Finishing Materials</a></li>
+                    <li><a href="#products">Plumbing, Electrical & Roofing</a></li>
                 </ul>
             </div>
             <div>
                 <h4>Contact Info</h4>
                 <div class="footer-contact-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Bole Road, Addis Ababa</span>
+                    <span>Bole Road, Addis Ababa, Ethiopia</span>
                 </div>
                 <div class="footer-contact-item">
                     <i class="fas fa-phone"></i>
@@ -1092,17 +1208,17 @@
                 </div>
                 <div class="footer-contact-item">
                     <i class="fas fa-clock"></i>
-                    <span>Mon - Fri: 8:00 AM - 6:00 PM</span>
+                    <span>Mon – Fri: 8:00 AM – 6:00 PM</span>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 YG Trade & Construction PLC. All rights reserved.</p>
+            <p>&copy; 2025 YG Trade & Construction PLC. All rights reserved. &nbsp;|&nbsp; Ethiopia's Complete Construction Partner.</p>
         </div>
     </div>
 </footer>
 
-<!-- Back to Top Button -->
+<!-- Back to Top -->
 <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <i class="fas fa-chevron-up"></i>
 </button>
@@ -1111,35 +1227,27 @@
 (function() {
     'use strict';
 
-    // ============ Dark Mode Detection ============
+    // Dark Mode
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.documentElement.classList.add('dark');
     }
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(event) {
-        if (event.matches) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        document.documentElement.classList.toggle('dark', e.matches);
     });
 
-    // ============ Cursor Glow ============
+    // Cursor Glow
     var cursorGlow = document.getElementById('cursorGlow');
     var glowActive = false;
     document.addEventListener('mousemove', function(e) {
-        if (!glowActive) {
-            cursorGlow.classList.add('active');
-            glowActive = true;
-        }
+        if (!glowActive) { cursorGlow.classList.add('active'); glowActive = true; }
         cursorGlow.style.left = e.clientX + 'px';
         cursorGlow.style.top = e.clientY + 'px';
     });
     document.addEventListener('mouseleave', function() {
-        cursorGlow.classList.remove('active');
-        glowActive = false;
+        cursorGlow.classList.remove('active'); glowActive = false;
     });
 
-    // ============ Loading Screen ============
+    // Loading Screen
     var loadingScreen = document.getElementById('loadingScreen');
     window.addEventListener('load', function() {
         setTimeout(function() {
@@ -1152,245 +1260,168 @@
         }, 2200);
     });
 
-    // ============ Mobile Menu ============
+    // Mobile Menu
     var menuToggle = document.getElementById('menuToggle');
     var mobileMenu = document.getElementById('mobileMenu');
-    var navLinks = document.querySelectorAll('.nav-link');
-
     menuToggle.addEventListener('click', function() {
         this.classList.toggle('active');
         mobileMenu.classList.toggle('open');
         document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
     });
-
-    navLinks.forEach(function(link) {
+    document.querySelectorAll('.nav-link').forEach(function(link) {
         link.addEventListener('click', function() {
             menuToggle.classList.remove('active');
             mobileMenu.classList.remove('open');
             document.body.style.overflow = '';
-            navLinks.forEach(function(l) { l.classList.remove('active'); });
-            var href = link.getAttribute('href');
-            document.querySelectorAll('.nav-link[href="' + href + '"]').forEach(function(el) {
-                el.classList.add('active');
-            });
         });
     });
 
-    // ============ Navbar Scroll ============
+    // Navbar Scroll
     var navbar = document.getElementById('navbar');
     var backToTop = document.getElementById('backToTop');
     var ticking = false;
-
     function updateNavbar() {
-        if (window.scrollY > 100) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-        if (window.scrollY > 500) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
-        }
+        navbar.classList.toggle('scrolled', window.scrollY > 100);
+        backToTop.classList.toggle('visible', window.scrollY > 500);
         ticking = false;
     }
-
     window.addEventListener('scroll', function() {
-        if (!ticking) {
-            window.requestAnimationFrame(updateNavbar);
-            ticking = true;
-        }
+        if (!ticking) { window.requestAnimationFrame(updateNavbar); ticking = true; }
     });
     updateNavbar();
 
-    // ============ Back to Top ============
+    // Back to Top
     backToTop.addEventListener('click', function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // ============ Smooth Scrolling ============
+    // Smooth Scrolling
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            var targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            var targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            }
+            var id = this.getAttribute('href');
+            if (id === '#') return;
+            var el = document.querySelector(id);
+            if (el) window.scrollTo({ top: el.offsetTop - 80, behavior: 'smooth' });
         });
     });
 
-    // ============ Scroll Reveal Animations ============
-    var revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-
+    // Scroll Reveal
+    var revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
     function handleReveal() {
-        var windowHeight = window.innerHeight;
-        revealElements.forEach(function(el) {
-            var elementTop = el.getBoundingClientRect().top;
-            var revealPoint = 120;
-            if (elementTop < windowHeight - revealPoint) {
-                el.classList.add('visible');
-            }
+        var wh = window.innerHeight;
+        revealEls.forEach(function(el) {
+            if (el.getBoundingClientRect().top < wh - 110) el.classList.add('visible');
         });
     }
-
     window.addEventListener('scroll', handleReveal);
     window.addEventListener('resize', handleReveal);
     setTimeout(handleReveal, 100);
 
-    // ============ Active Navigation on Scroll ============
+    // Active Nav on Scroll
     var sections = document.querySelectorAll('section[id]');
-
     function updateActiveNav() {
-        var scrollPos = window.scrollY + 150;
-        sections.forEach(function(section) {
-            var top = section.offsetTop;
-            var height = section.offsetHeight;
-            var id = section.getAttribute('id');
-            if (scrollPos >= top && scrollPos < top + height) {
-                document.querySelectorAll('.nav-link').forEach(function(link) {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === '#' + id) {
-                        link.classList.add('active');
-                    }
+        var sp = window.scrollY + 150;
+        sections.forEach(function(s) {
+            if (sp >= s.offsetTop && sp < s.offsetTop + s.offsetHeight) {
+                document.querySelectorAll('.nav-link').forEach(function(l) {
+                    l.classList.toggle('active', l.getAttribute('href') === '#' + s.id);
                 });
             }
         });
     }
-
     window.addEventListener('scroll', updateActiveNav);
 
-    // ============ Counter Animation ============
+    // Counter Animation
     function animateCounters() {
-        var counters = document.querySelectorAll('.hero-stat-val[data-count]');
-        counters.forEach(function(counter) {
+        document.querySelectorAll('.hero-stat-val[data-count]').forEach(function(counter) {
             var target = parseInt(counter.getAttribute('data-count'));
             var suffix = counter.querySelector('.plus') ? counter.querySelector('.plus').textContent : '';
             var duration = 2200;
             var startTime = null;
-
-            function easeOutQuart(t) {
-                return 1 - Math.pow(1 - t, 4);
+            function easeOut(t) { return 1 - Math.pow(1 - t, 4); }
+            function step(ts) {
+                if (!startTime) startTime = ts;
+                var p = Math.min((ts - startTime) / duration, 1);
+                counter.innerHTML = Math.floor(easeOut(p) * target) + '<span class="plus">' + suffix + '</span>';
+                if (p < 1) window.requestAnimationFrame(step);
+                else counter.innerHTML = target + '<span class="plus">' + suffix + '</span>';
             }
-
-            function step(timestamp) {
-                if (!startTime) startTime = timestamp;
-                var progress = Math.min((timestamp - startTime) / duration, 1);
-                var eased = easeOutQuart(progress);
-                var current = Math.floor(eased * target);
-                counter.innerHTML = current + '<span class="plus">' + suffix + '</span>';
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
-                } else {
-                    counter.innerHTML = target + '<span class="plus">' + suffix + '</span>';
-                }
-            }
-
             window.requestAnimationFrame(step);
         });
     }
 
     function animateStatBars() {
         setTimeout(function() {
-            document.querySelectorAll('.hero-stat-bar-fill').forEach(function(bar) {
-                bar.classList.add('animate');
-            });
+            document.querySelectorAll('.hero-stat-bar-fill').forEach(function(b) { b.classList.add('animate'); });
         }, 600);
     }
 
-    // ============ Toast Notification ============
+    // Toast
     var toast = document.getElementById('toast');
-    var toastMessage = document.getElementById('toastMessage');
-    var toastClose = document.getElementById('toastClose');
-
-    function showToast(message, type) {
-        toastMessage.textContent = message;
+    var toastMsg = document.getElementById('toastMessage');
+    document.getElementById('toastClose').addEventListener('click', function() { toast.classList.remove('show'); });
+    function showToast(msg, type) {
+        toastMsg.textContent = msg;
         toast.className = 'toast' + (type ? ' ' + type : '');
         toast.classList.add('show');
-        setTimeout(function() {
-            toast.classList.remove('show');
-        }, 4500);
+        setTimeout(function() { toast.classList.remove('show'); }, 4500);
     }
 
-    toastClose.addEventListener('click', function() {
-        toast.classList.remove('show');
-    });
-
-    // ============ Form Submission ============
-    var contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+    // Form
+    var form = document.getElementById('contactForm');
+    if (form) {
+        form.addEventListener('submit', function(e) {
             e.preventDefault();
-            showToast('Thank you for your message! We will get back to you within 24 hours.', 'success');
+            showToast('Thank you! We will send your quote within 24 hours.', 'success');
             this.reset();
         });
     }
 
-    // ============ Parallax Effect on Hero ============
+    // Hero Parallax
     var heroBg = document.querySelector('.hero-bg img');
     if (heroBg) {
         window.addEventListener('scroll', function() {
-            var scrolled = window.scrollY;
-            if (scrolled < window.innerHeight) {
-                heroBg.style.transform = 'scale(1.15) translateY(' + (scrolled * 0.25) + 'px)';
+            if (window.scrollY < window.innerHeight) {
+                heroBg.style.transform = 'scale(1.15) translateY(' + (window.scrollY * 0.25) + 'px)';
             }
         });
     }
 
-    // ============ Tilt Effect on Project Cards ============
+    // Project Card Tilt
     document.querySelectorAll('.project-item').forEach(function(item) {
         item.addEventListener('mousemove', function(e) {
-            var rect = this.getBoundingClientRect();
-            var x = e.clientX - rect.left;
-            var y = e.clientY - rect.top;
-            var centerX = rect.width / 2;
-            var centerY = rect.height / 2;
-            var rotateX = (y - centerY) / 25;
-            var rotateY = (centerX - x) / 25;
-            this.style.transform = 'perspective(1000px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translateY(-8px)';
+            var r = this.getBoundingClientRect();
+            var rx = (e.clientY - r.top - r.height / 2) / 25;
+            var ry = (r.width / 2 - (e.clientX - r.left)) / 25;
+            this.style.transform = 'perspective(1000px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg) translateY(-8px)';
         });
         item.addEventListener('mouseleave', function() {
             this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
         });
     });
 
-    // ============ Magnetic Button Effect ============
+    // Magnetic Buttons
     document.querySelectorAll('.btn-primary, .btn-secondary').forEach(function(btn) {
         btn.addEventListener('mousemove', function(e) {
-            var rect = this.getBoundingClientRect();
-            var x = e.clientX - rect.left - rect.width / 2;
-            var y = e.clientY - rect.top - rect.height / 2;
-            this.style.transform = 'translate(' + (x * 0.12) + 'px, ' + (y * 0.12) + 'px) translateY(-4px) scale(1.02)';
+            var r = this.getBoundingClientRect();
+            var x = e.clientX - r.left - r.width / 2;
+            var y = e.clientY - r.top - r.height / 2;
+            this.style.transform = 'translate(' + (x * 0.12) + 'px,' + (y * 0.12) + 'px) translateY(-4px) scale(1.02)';
         });
-        btn.addEventListener('mouseleave', function() {
-            this.style.transform = '';
-        });
+        btn.addEventListener('mouseleave', function() { this.style.transform = ''; });
     });
 
-    // ============ Section parallax for blobs ============
+    // Blob Parallax
     window.addEventListener('scroll', function() {
-        var scrolled = window.scrollY;
-        var blob = document.querySelector('.hero-blob');
-        var blob2 = document.querySelector('.hero-blob-2');
-        if (blob && scrolled < window.innerHeight) {
-            blob.style.transform = 'translateY(' + (scrolled * -0.15) + 'px)';
-        }
-        if (blob2 && scrolled < window.innerHeight) {
-            blob2.style.transform = 'translateY(' + (scrolled * -0.1) + 'px)';
-        }
+        var s = window.scrollY;
+        var b1 = document.querySelector('.hero-blob');
+        var b2 = document.querySelector('.hero-blob-2');
+        if (b1 && s < window.innerHeight) b1.style.transform = 'translateY(' + (s * -0.15) + 'px)';
+        if (b2 && s < window.innerHeight) b2.style.transform = 'translateY(' + (s * -0.1) + 'px)';
     });
 
 })();
 </script>
 </body>
 </html>
-
-
-
-
-
-
